@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Recursive&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap')
+
+.calculatorSec
+    flex: 1
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    // background: pink
+
+    .calclulatorCard
+        // background: #272c29
+        // border-radius: 0.25rem
+        display: flex
+        justify-content: center
+        padding: 1rem
+        min-width: 360px
+        max-width: 800px
+        flex-wrap: wrap
+        border-top: 1px solid green
+        border-bottom: 1px solid green
+
+        .left
+            flex: 1
+            display: flex
+            flex-direction: column
+            padding: 1rem
+            background: #1b1b1b
+            border-radius: 0.25rem
+            margin: .5rem
+
+        .right
+            flex: 1
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            background: #1b1b1b
+            padding: 1rem
+            border-radius: 0.25rem
+            margin: .5rem
+
+        .wrapperDiv
+            display: flex
+            flex-direction: row
+            align-items: center
+            padding: 0.5rem
+            // background: pink
+            justify-content: flex-end
+
+            h1
+                font-size: 2rem
+                font-family: 'Recursive', sans-serif
+                span
+                    font-size: 1.4rem
+                    font-family: 'Source Code Pro', monospace
+
+            h3
+                font-family: 'Quicksand', sans-serif
+                text-align: center
+                text-transform: capitalize
+
+            select
+                padding: 0.25rem
+                font-size: 1.1rem
+                width: 200px
+                max-width: 200px
+                border-radius: 0.25rem
+                background: #3b3b3b
+                color: #fff
+
+            label
+                margin-right: 0.75rem
+                font-size: 1.2rem
+                font-family: 'Quicksand', sans-serif
+
+            input
+                padding: 0.5rem
+                font-size: 1.2rem
+                max-width: 200px
+                border: 0
+                border-radius: 0.25rem
+                background: #3b3b3b
+                color: #fff
+                font-family: 'Recursive', sans-serif
+
+            button
+                padding: 0.75rem 1.5rem
+                border: 0
+                border-radius: 0.25rem
+                font-size: 0.8rem
+                cursor: pointer
+                background: #00883d
+                color: #fff
+                transition: all 200ms ease-in-out
+                text-transform: uppercase
+                letter-spacing: 1px
+                font-family: 'Quicksand', sans-serif
+
+                &:hover
+                    background: #00662e

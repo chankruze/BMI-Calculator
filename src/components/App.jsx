@@ -6,27 +6,16 @@ Copyright (c) Geekofia 2020 and beyond
 */
 
 import React from 'react';
-import { useState, useEffect } from 'react';
+
+import Calculator from './Calculator';
+
 import styles from './App.module.sass';
 
 const App = () => {
-	const [time, setTime] = useState(new Date().toLocaleTimeString());
-
-	useEffect(() => {
-		const interval = setInterval(() => {
-			setTime(new Date().toLocaleTimeString());
-		}, 1000);
-
-		return () => clearInterval(interval);
-	}, []);
-
 	return (
 		<div className={styles.app}>
-			<h1>{time}</h1>
-			<p>{process.env.TEST_VALUE}</p>
-			<p className={styles.desc}>
-				App created using chankruze&apos;s minimal WBR setup
-			</p>
+			<h1 className={styles.heading}>BMI Calculator</h1>
+			<Calculator />
 		</div>
 	);
 };
